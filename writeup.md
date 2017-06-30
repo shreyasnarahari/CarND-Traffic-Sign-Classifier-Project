@@ -38,6 +38,7 @@ Examples for CLAHE Transform:(Before/After)
 <img src="./Processed_Images_Eg/Image_2.jpg"  align="Middle"/>
 
 <img src="./Processed_Images_Eg/Image_3.jpg"  align="Middle"/>
+
 ***
 
 **Model Architecture:** 
@@ -64,9 +65,11 @@ Examples for CLAHE Transform:(Before/After)
 | Fully Connected 3 | 120 fully connected to 84 |
 | Dropout | Dropout is applied with a keep_probability = 0.5 |
 | Final Layer | 84 fully connected to 43 [Output] |
+
 ***
 
-** Model Training:**
+**Model Training:**
+
 * __Loss Function__ : Cross Entropy
 * __Optimizer__ : Adam
 * __Learning Rate__ : 0.0002
@@ -76,7 +79,7 @@ Examples for CLAHE Transform:(Before/After)
 
 ***
 
-**Solution Approach: ** The first architecture that was chosen was LeNet-5. It was chosen because the input/output parameters could be easily modified for given dataset and was a good starting point. One problem was that LeNet-5 could not genralize well on the given dataset which resulted in not so good validation accuracy. The following adjustements were made on the LeNet-5 architecture.
+**Solution Approach:** The first architecture that was chosen was LeNet-5. It was chosen because the input/output parameters could be easily modified for given dataset and was a good starting point. One problem was that LeNet-5 could not genralize well on the given dataset which resulted in not so good validation accuracy. The following adjustements were made on the LeNet-5 architecture.
 
 Adjustements that were made:
 * Another layer was added to the model for the model to detect more complex images.
@@ -98,9 +101,9 @@ Test Accuracy = 96% (approx.)
 
 ### New Images used for testing the model:
 
-**30 Km/h (1) --> ** <img src="./Cropped-Images/30kmph.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>**Yield --> **   <img src="./Cropped-Images/Give_Way.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>**No Entry (1) --> ** <img src="./Cropped-Images/No_Entry.jpg" alt="No Entry" style="width: 64px;" align="Middle"/>**No Entry (2) --> ** <img src="./Cropped-Images/No_Entry_1.jpg" alt="No Entry" style="width: 64px;" align="Middle"/>**No Vehicles (1) -->** <img src="./Cropped-Images/No_Vehicles.jpg" alt="No Vehicles" style="width: 64px;" align="Middle"/>
+**30 Km/h (1) -->** <img src="./Cropped-Images/30kmph.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>**Yield -->**   <img src="./Cropped-Images/Give_Way.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>**No Entry (1) -->** <img src="./Cropped-Images/No_Entry.jpg" alt="No Entry" style="width: 64px;" align="Middle"/>**No Entry (2) -->** <img src="./Cropped-Images/No_Entry_1.jpg" alt="No Entry" style="width: 64px;" align="Middle"/>**No Vehicles (1) -->** <img src="./Cropped-Images/No_Vehicles.jpg" alt="No Vehicles" style="width: 64px;" align="Middle"/>
 
-**No Vehicles (2) -->** <img src="./Cropped-Images/No_Vehicles_1.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>**Priority Road --> ** <img src="./Cropped-Images/Priority_Road.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>**Right Turn --> ** <img src="./Cropped-Images/Right_Turn.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>**30 Km/h (2) --> ** <img src="./Cropped-Images/speed_limit_30.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>
+**No Vehicles (2) -->** <img src="./Cropped-Images/No_Vehicles_1.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>**Priority Road -->** <img src="./Cropped-Images/Priority_Road.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>**Right Turn -->** <img src="./Cropped-Images/Right_Turn.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>**30 Km/h (2) -->** <img src="./Cropped-Images/speed_limit_30.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>
 
 **Straight or Right Turn -->** <img src="./Cropped-Images/Straight_or_Right.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>
 
