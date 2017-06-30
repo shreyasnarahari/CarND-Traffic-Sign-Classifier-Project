@@ -141,12 +141,12 @@ So, This model was able to correctly guess the probabilities of 10 out of 10 ima
 
 As we can see that the model classifies all the images very well with all the images being classified with softmax probabilities close to 1.0 .
 
-4th Image (No_Entry_2) I could say was the hardest to classify as there is occlusion of the sign. The training set for this particular class has only a couple of images with occulusion in them. And it could be easily mistaken to be any other sign by the network also.
+4th Image (No_Entry_2) I could say was the hardest to classify as there is occlusion of the sign. The training set for this particular class has only a couple of images with occulusion in them. And it could be easily mistaken to be any other sign by the network also especially "Stop" , "Yield" or "Vehicles over 3.5 metric tons prohibited"
 
 1st Image (speed_limit_30_1) and 9th Image (speed_limit_30_2) has a tendency to be classified as other speed limit signs mostly as Speed Limit (20km/h) sign. I have also observed sometimes that the images have second prebabilities as the sign "Speed Limit (80km/h)" as 30 looks similar to 80
 
-5th Image (No_Vehicles_1) and 6th Image (No_Vehicles_2) tend to be classified as speed limit signs. The 6th Image (No_Vehicles_2) is especially tricky because there is a lot of text also in the Image.
+5th Image (No_Vehicles_1) and 6th Image (No_Vehicles_2) tend to be classified as speed limit signs becuse of similar borders present in both the signs. The 6th Image (No_Vehicles_2) is especially tricky because there is a lot of text also in the Image.
 
-The other images do not have any such aspects which may make them difficult to classify.
+The other images do not seem to have any such aspects which may make them difficult to classify.
 
 ***
