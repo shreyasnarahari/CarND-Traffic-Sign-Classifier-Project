@@ -2,7 +2,7 @@
 
 The goal of this project is to classify 43 type's of Traffic Signs using Convolution Neural Networks.
 
-##Steps of the Project:
+## Steps of the Project:
 * Load the dataset and divide Train, Validate and Test arrays.
 * Explore the dataset and types of signs present.
 * Pre-process the data to be used for the CNN.
@@ -11,16 +11,16 @@ The goal of this project is to classify 43 type's of Traffic Signs using Convolu
 * Analize the new predictions.
 
 ## Rubic Points
-###Dataset Exploration:
+### Dataset Exploration:
 ***
 **Dataset Summary:** The basic summary of the dataset was given by following the guidelines already given in the notebook.
 ***
-** Exploratory Visualization:** Graphs were plotted showing the number of image per class. The types of classes were also shown and an example was provided for each class for better understanding and clarity.
+**Exploratory Visualization:** Graphs were plotted showing the number of image per class. The types of classes were also shown and an example was provided for each class for better understanding and clarity.
 ***
-** ** <img src="number.jpg" alt="Train_Valid_And_Test_Summary" align="Middle"/>
+<img src="number.jpg" alt="Train_Valid_And_Test_Summary" align="Middle"/>
 ### Design and Test a Model Architecture
 ***
-** Preprocessing:** The images were rotated to &plusmn;5 degrees and CLAHE(contrast limited adaptive histogram equalization) transform was applied to the image batches before training or testing the network.
+**Preprocessing:** The images were rotated to &plusmn;5 degrees and CLAHE(contrast limited adaptive histogram equalization) transform was applied to the image batches before training or testing the network.
 
 Initially Histogram Equilization was used but CLAHE gave better results.
 
@@ -36,7 +36,7 @@ Examples for CLAHE Transform:(Before/After)
 
 <img src="./Processed_Images_Eg/Image_3.jpg"  align="Middle"/>
 ***
-** Model Architecture:** 
+**Model Architecture:** 
 
 | Layer        | Description           |
 | -------------|:--------------------:|
@@ -86,18 +86,18 @@ Validation Accuracy = 97% (approx.)
 Test Accuracy = 96% (approx.)
 
 ***
-** Validation Accuracy:** 
+**Validation Accuracy:** 
 
 ### New Images used for testing the model:
 
-** 30 Km/h (1) --> ** <img src="./Cropped-Images/30kmph.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>** Yield --> **   <img src="./Cropped-Images/Give_Way.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>** No Entry (1) --> ** <img src="./Cropped-Images/No_Entry.jpg" alt="No Entry" style="width: 64px;" align="Middle"/>** No Entry (2) --> ** <img src="./Cropped-Images/No_Entry_1.jpg" alt="No Entry" style="width: 64px;" align="Middle"/>** No Vehicles (1) -->** <img src="./Cropped-Images/No_Vehicles.jpg" alt="No Vehicles" style="width: 64px;" align="Middle"/>
+**30 Km/h (1) --> ** <img src="./Cropped-Images/30kmph.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>**Yield --> **   <img src="./Cropped-Images/Give_Way.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>**No Entry (1) --> ** <img src="./Cropped-Images/No_Entry.jpg" alt="No Entry" style="width: 64px;" align="Middle"/>**No Entry (2) --> ** <img src="./Cropped-Images/No_Entry_1.jpg" alt="No Entry" style="width: 64px;" align="Middle"/>**No Vehicles (1) -->** <img src="./Cropped-Images/No_Vehicles.jpg" alt="No Vehicles" style="width: 64px;" align="Middle"/>
 
-** No Vehicles (2) -->** <img src="./Cropped-Images/No_Vehicles_1.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>** Priority Road --> ** <img src="./Cropped-Images/Priority_Road.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>** Right Turn --> ** <img src="./Cropped-Images/Right_Turn.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>** 30 Km/h (2) --> ** <img src="./Cropped-Images/speed_limit_30.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>
+**No Vehicles (2) -->** <img src="./Cropped-Images/No_Vehicles_1.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>**Priority Road --> ** <img src="./Cropped-Images/Priority_Road.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>**Right Turn --> ** <img src="./Cropped-Images/Right_Turn.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>**30 Km/h (2) --> ** <img src="./Cropped-Images/speed_limit_30.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>
 
-** Straight or Right Turn -->** <img src="./Cropped-Images/Straight_or_Right.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>
+**Straight or Right Turn -->** <img src="./Cropped-Images/Straight_or_Right.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>
 
 
-** Predictions on the new model:**
+**Predictions on the new model:**
 
 | Image | Prediction |
 | ---------- | :---------: |
