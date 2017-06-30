@@ -101,9 +101,9 @@ Test Accuracy = 97% (approx.)
 
 ### New Images used for testing the model:
 
-**30 Km/h (1) -->** <img src="./Cropped-Images/30kmph.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>**Yield -->**   <img src="./Cropped-Images/Give_Way.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>**No Entry (1) -->** <img src="./Cropped-Images/No_Entry.jpg" alt="No Entry" style="width: 64px;" align="Middle"/>**No Entry (2) -->** <img src="./Cropped-Images/No_Entry_1.jpg" alt="No Entry" style="width: 64px;" align="Middle"/>**No Vehicles (1) -->** <img src="./Cropped-Images/No_Vehicles.jpg" alt="No Vehicles" style="width: 64px;" align="Middle"/>
+**30 Km/h (1) -->** <img src="./Cropped-Images/30kmph.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/> **Yield -->**  <img src="./Cropped-Images/Give_Way.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/> **No Entry (1) -->** <img src="./Cropped-Images/No_Entry.jpg" alt="No Entry" style="width: 64px;" align="Middle"/> **No Entry (2) -->** <img src="./Cropped-Images/No_Entry_1.jpg" alt="No Entry" style="width: 64px;" align="Middle"/> **No Vehicles (1) -->** <img src="./Cropped-Images/No_Vehicles.jpg" alt="No Vehicles" style="width: 64px;" align="Middle"/>
 
-**No Vehicles (2) -->** <img src="./Cropped-Images/No_Vehicles_1.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>**Priority Road -->** <img src="./Cropped-Images/Priority_Road.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>**Right Turn -->** <img src="./Cropped-Images/Right_Turn.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>**30 Km/h (2) -->** <img src="./Cropped-Images/speed_limit_30.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>
+**No Vehicles (2) -->** <img src="./Cropped-Images/No_Vehicles_1.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/> **Priority Road -->** <img src="./Cropped-Images/Priority_Road.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/> **Right Turn -->** <img src="./Cropped-Images/Right_Turn.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/> **30 Km/h (2) -->** <img src="./Cropped-Images/speed_limit_30.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>
 
 **Straight or Right Turn -->** <img src="./Cropped-Images/Straight_or_Right.jpg" alt="30 Km/h" style="width: 64px;" align="Middle"/>
 
@@ -115,7 +115,7 @@ Test Accuracy = 97% (approx.)
 | Speed Limit 30km/h (1) | Speed Limit (30km/h) |
 | Yield | Yield |
 | No Entry (1) | No Entry |
-| No Entry (2) | Stop |
+| No Entry (2) | No Entry |
 | No Vehicles (1) | No Vehicles |
 | No Vehicles (2) | No Vehicles |
 | Priority Road | Priority Road |
@@ -123,7 +123,6 @@ Test Accuracy = 97% (approx.)
 | Speed Limit 30km/h (2) | Speed Limit (30km/h) |
 | Straight or Right Turn | Go straight or right |
 
-So, This model was able to correctly guess the probabilities of 9 of 10 images, this gives us a probability of 90%.
 
 **Probabilities Vs Correct Predictions:**
 
@@ -138,6 +137,16 @@ So, This model was able to correctly guess the probabilities of 9 of 10 images, 
 <img src="./Plots/Softmax_8.jpg" alt="30 Km/h"  align="Middle"/>
 <img src="./Plots/Softmax_9.jpg" alt="30 Km/h"  align="Middle"/>
 
-All of the new images have been classified properly with 100% accuracy.
+So, This model was able to correctly guess the probabilities of 10 out of 10 images, this gives us a probability of 100% for prediction on new images.
+
+As we can see that the model classifies all the images very well with all the images being classified with softmax probabilities close to 1.0 .
+
+4th Image (No_Entry_2) I could say was the hardest to classify as there is occlusion of the sign. The training set for this particular class has only a couple of images with occulusion in them. And it could be easily mistaken to be any other sign by the network also.
+
+1st Image (speed_limit_30_1) and 9th Image (speed_limit_30_2) has a tendency to be classified as other speed limit signs mostly as Speed Limit (20km/h) sign. I have also observed sometimes that the images have second prebabilities as the sign "Speed Limit (80km/h)" as 30 looks similar to 80
+
+5th Image (No_Vehicles_1) and 6th Image (No_Vehicles_2) tend to be classified as speed limit signs. The 6th Image (No_Vehicles_2) is especially tricky because there is a lot of text also in the Image.
+
+The other images do not have any such aspects which may make them difficult to classify.
 
 ***
