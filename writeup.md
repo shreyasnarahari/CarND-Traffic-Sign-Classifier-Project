@@ -18,6 +18,7 @@ The goal of this project is to classify 43 type's of Traffic Signs using Convolu
 **Exploratory Visualization:** Graphs were plotted showing the number of image per class. The types of classes were also shown and an example was provided for each class for better understanding and clarity.
 ***
 <img src="number.jpg" alt="Train_Valid_And_Test_Summary" align="Middle"/>
+
 ### Design and Test a Model Architecture
 
 ***
