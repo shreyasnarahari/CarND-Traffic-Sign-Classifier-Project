@@ -19,7 +19,9 @@ The goal of this project is to classify 43 type's of Traffic Signs using Convolu
 ***
 <img src="number.jpg" alt="Train_Valid_And_Test_Summary" align="Middle"/>
 ### Design and Test a Model Architecture
+
 ***
+
 **Preprocessing:** The images were rotated to &plusmn;5 degrees and CLAHE(contrast limited adaptive histogram equalization) transform was applied to the image batches before training or testing the network.
 
 Initially Histogram Equilization was used but CLAHE gave better results.
