@@ -93,7 +93,7 @@ Adjustements that were made:
 
 Validation Accuracy = 97% (approx.)
 
-Test Accuracy = 96% (approx.)
+Test Accuracy = 97% (approx.)
 
 ***
 
