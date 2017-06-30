@@ -39,6 +39,7 @@ Examples for CLAHE Transform:(Before/After)
 
 <img src="./Processed_Images_Eg/Image_3.jpg"  align="Middle"/>
 ***
+
 **Model Architecture:** 
 
 | Layer        | Description           |
@@ -64,6 +65,7 @@ Examples for CLAHE Transform:(Before/After)
 | Dropout | Dropout is applied with a keep_probability = 0.5 |
 | Final Layer | 84 fully connected to 43 [Output] |
 ***
+
 ** Model Training:**
 * __Loss Function__ : Cross Entropy
 * __Optimizer__ : Adam
@@ -71,7 +73,9 @@ Examples for CLAHE Transform:(Before/After)
 * __Epoch__ : 55
 * __batch__ : 128
 * __Keep Probability__ : 0.5
+
 ***
+
 **Solution Approach: ** The first architecture that was chosen was LeNet-5. It was chosen because the input/output parameters could be easily modified for given dataset and was a good starting point. One problem was that LeNet-5 could not genralize well on the given dataset which resulted in not so good validation accuracy. The following adjustements were made on the LeNet-5 architecture.
 
 Adjustements that were made:
@@ -89,6 +93,7 @@ Validation Accuracy = 97% (approx.)
 Test Accuracy = 96% (approx.)
 
 ***
+
 **Validation Accuracy:** 
 
 ### New Images used for testing the model:
